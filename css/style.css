@@ -4,7 +4,7 @@
 }
 
 header {
-    margin-bottom: 16px;
+    margin-bottom: 64px;
 }
 
 .container {
@@ -22,6 +22,10 @@ header {
     border-top: #0065FC 3px solid;
     padding-top: 10px;
     color: #0065FC;
+}
+
+p {
+    margin-top: -10px;
 }
 
 :root {
