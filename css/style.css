@@ -7,18 +7,18 @@ header {
     margin-bottom: 64px;
 }
 
-.container {
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.boutton-activités {
+.bouton-activités {
     margin-left: 5em;
     padding-top: 13px;
 }
 
-.boutton-hebergements {
+.bouton-hebergements {
     border-top: #0065FC 3px solid;
     padding-top: 10px;
     color: #0065FC;
@@ -26,6 +26,31 @@ header {
 
 p {
     margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+nav {
+    margin-bottom: 25px;
+}
+.barre-de-recherche {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.iconeGPS {
+    border: 0.5px solid;
+    padding: 1em;
+}
+
+.saisie {
+    border: 0.5px solid;
+    padding: 1em;
+}
+
+.bouton-recherche {
+    border: 0.5px solid;
+    padding: 1em;
 }
 
 :root {
