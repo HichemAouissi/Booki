@@ -189,11 +189,19 @@ p {
     height: fit-content;
 }
 
-.i {
-    padding: 1%;
+.info {
+    width: 1.8em;
+    height: 1.8em;
     border: 1px solid #d9d9d9;
     border-radius: 50%;
     font-size: small;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resultats {
+    margin-left: 0.5em;
 }
 
 /***** main *********/
@@ -390,6 +398,24 @@ aside {
 
 footer {
     background-color:#F2F2F2;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-container ul .titre {
+    font-weight: bold;
+}
+
+.footer-container ul {
+    padding-right: 17em;
+    padding-left: 1%;
+    list-style-type: none;
+}
+
+.footer-container li {
+    padding-bottom: 1em;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
