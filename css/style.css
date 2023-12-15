@@ -474,6 +474,23 @@ footer {
         margin-bottom: 2%;
     }
 
+    .activités-cards img {
+        width: 12em;
+        height: 12em;
+    }
+
+    .activités-cards .card {
+        width: min-content;
+        height: 17em;
+    }
+
+    .activités-cards .card-title {
+
+    }
+
+    .footer-container ul {
+        padding-right: 9em;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
