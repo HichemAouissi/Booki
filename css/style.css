@@ -121,10 +121,13 @@ p {
     font-size: medium;
     font-weight: bold;
     padding-right: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .Économique i, .Familial i, .Romantique i, .Nos-Pépites i {
     margin: 0.5em;
+    font-size: large;
 }
 
 .Économique:hover, .Familial:hover, .Romantique:hover, .Nos-Pépites:hover {
@@ -533,19 +536,25 @@ footer {
     
     .filtre-container {
         margin-top: 2em;
+        justify-content: space-between;
     }
 
     .Économique, .Familial, .Romantique, .Nos-Pépites {
-        width: 45%;
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
+        width: 48%;
         font-size: small;
-        justify-content: center;
+        margin-bottom: 5%;
     }
     
     .Économique i, .Familial i, .Romantique i, .Nos-Pépites i {
-        font-size: medium;
+        
+    }
+
+    .resultats-container {
+        align-items: center;
+    }
+
+    .info {
+        width: 2.2em;
     }
 
     main {
