@@ -35,26 +35,16 @@ header img {
     justify-content: space-between;
 }
 
-.bouton-activités {
+.bouton-activités, .bouton-hebergements {
     padding-top: 13px;
 }
 
-.bouton-activités:hover {
+.bouton-activités:hover, .bouton-hebergements:hover {
     border-top: #0065FC 3px solid;
     padding-top: 10px;
     color: #0065FC;
 }
 
-.bouton-hebergements {
-    padding-top: 13px;
-
-}
-
-.bouton-hebergements:hover {
-    border-top: #0065FC 3px solid;
-    padding-top: 10px;
-    color: #0065FC;
-}
 /***** nav ***********/
 h1 {
     margin-bottom: 0.5%;
@@ -76,6 +66,9 @@ p {
     border-top-left-radius: 15px;
     font-size: large;
     padding: 0.75em;
+    width: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 .saisie {
@@ -100,7 +93,10 @@ p {
     cursor: pointer;
     font-size: medium;
     font-weight: bold;
+}
 
+.loupe {
+    display: none;
 }
 
 .filtre-container {
@@ -117,7 +113,7 @@ p {
     font-weight: bold;
 }
 
-.Économique {
+.Économique, .Familial, .Romantique, .Nos-Pépites  {
     margin-right: 1%;
     border-radius: 25px;
     background-color: white;
@@ -127,64 +123,11 @@ p {
     padding-right: 1em;
 }
 
-.Économique i {
+.Économique i, .Familial i, .Romantique i, .Nos-Pépites i {
     margin: 0.5em;
 }
 
-.Économique:hover {
-    background-color: #DEEBFF;
-}
-
-.Familial {
-    margin-right: 1%;
-    border-radius: 25px;
-    background-color: white;
-    border: 2px solid #d9d9d9;
-    font-size: medium;
-    font-weight: bold;
-    padding-right: 1em;
-}
-
-.Familial i {
-    margin: 0.5em;
-}
-
-.Familial:hover {
-    background-color: #DEEBFF;
-}
-
-.Romantique {
-    margin-right: 1%;
-    border-radius: 25px;
-    background-color: white;
-    border: 2px solid #d9d9d9;
-    font-size: medium;
-    font-weight: bold;
-    padding-right: 1em;
-}
-
-.Romantique i {
-    margin: 0.5em;
-}
-
-.Romantique:hover {
-    background-color: #DEEBFF;
-}
-
-.Nos-Pépites {
-    border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    background-color: white;
-    font-size: medium;
-    font-weight: bold;
-    padding-right: 1em;
-}
-
-.Nos-Pépites i {
-    margin: 0.5em;
-}
-
-.Nos-Pépites:hover {
+.Économique:hover, .Familial:hover, .Romantique:hover, .Nos-Pépites:hover {
     background-color: #DEEBFF;
 }
 
@@ -499,6 +442,11 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
+    .main-container {
+        padding: 0;
+    }
+    
     header {
         flex-direction: column;
         align-items: center;
@@ -514,6 +462,7 @@ footer {
 
     .bouton-activités {
         width: 50%;
+        padding-bottom: 10px;
     }
 
     .bouton-activités a {
@@ -523,13 +472,13 @@ footer {
 
     .bouton-activités:hover {
         border-top: none;
-        border-bottom: #0065FC 3px solid;
-        padding-bottom: 10px;
+        border-bottom: #0065FC 2px solid;
         color: #0065FC;
     }
 
     .bouton-hebergements {
         width: 50%;
+        padding-bottom: 10px;
     }
 
     .bouton-hebergements a {
@@ -539,9 +488,75 @@ footer {
 
     .bouton-hebergements:hover {
         border-top: none;
-        border-bottom: #0065FC 3px solid;
-        padding-bottom: 10px;
+        border-bottom: #0065FC 2px solid;
         color: #0065FC;
     }
 
+    nav {
+        padding: 0 15px;
+    }
+
+    .nav-container {
+        justify-content: center;
+        margin-top: 2em;
+    }
+    
+    h1 {
+        margin-bottom: 3%;
+    }
+    
+    p {
+        margin-top: 3%;
+    }
+    
+    .loupe {
+        border: none;
+        background-color: #0065FC;
+        border-radius: 15px;
+        cursor: pointer;
+        display: block;
+        font-size: larger;
+        width: 3.5em;
+    }
+    
+    .loupe i {
+        color: white;
+    }
+    
+    .saisie {
+        width: 100%;
+    }
+
+    .rechercher {
+        display: none;
+    }
+    
+    .filtre-container {
+        margin-top: 2em;
+    }
+
+    .Économique, .Familial, .Romantique, .Nos-Pépites {
+        width: 45%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: small;
+        justify-content: center;
+    }
+    
+    .Économique i, .Familial i, .Romantique i, .Nos-Pépites i {
+        font-size: medium;
+    }
+
+    main {
+
+    }
+
+    aside {
+
+    }
+
+    footer {
+
+    }
 }
