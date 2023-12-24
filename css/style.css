@@ -97,6 +97,7 @@ p {
 
 .loupe {
     display: none;
+    box-shadow: 0px 5px 5px grey;
 }
 
 .filtre-container {
@@ -373,6 +374,10 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .menu {
+        width: 30%;
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
