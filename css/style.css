@@ -46,7 +46,7 @@ header img {
 }
 
 /***** nav ***********/
-h1 {
+nav h1 {
     margin-bottom: 0.5%;
 }
 
@@ -138,7 +138,6 @@ p {
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
-    height: fit-content;
 }
 
 .info {
@@ -325,12 +324,10 @@ aside {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding-bottom: 2em;
 }
 
 .activités-cards .card {
     display: flex;
-    margin-top: 33px;
     flex-direction: column;
     padding: 0%;
 }
@@ -345,12 +342,8 @@ aside {
     width: 23%;
 }
 
-.activités-cards .card-content {
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+.activités-cards .card-title {
+  margin-left: 5%;
 }
 
 footer {
@@ -435,7 +428,7 @@ footer {
     }
 
     .activités-cards .card {
-        height: 17em;
+        height: 100%;
     }
 
     .footer-container ul {
@@ -545,10 +538,6 @@ footer {
         margin-bottom: 5%;
     }
     
-    .Économique i, .Familial i, .Romantique i, .Nos-Pépites i {
-        
-    }
-
     .resultats-container {
         align-items: center;
     }
@@ -557,15 +546,29 @@ footer {
         width: 2.2em;
     }
 
-    main {
-
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
     }
 
-    aside {
-
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
     }
 
-    footer {
+    .hebergements-and-populaires section {
+        border-radius: 0;
+    }
 
+    .hebergements-cards, .populaires-cards, .activités-cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .hebergements-cards a, .populaires-cards a, .activités-cards a {
+        width: 100%;
+    }
+
+    .footer-container {
+        margin-left: 5%;
+        flex-direction: column;
     }
 }
