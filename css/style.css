@@ -98,6 +98,7 @@ p {
 .loupe {
     display: none;
     box-shadow: 0px 5px 5px grey;
+    margin-left: -10px;
 }
 
 .filtre-container {
@@ -229,7 +230,6 @@ a {
 
 .hebergements-cards .card {
     display: flex;
-    margin-top: 33px;
     flex-direction: column;
     width: 92%;
 }
@@ -263,6 +263,7 @@ a {
 
 .hebergements-cards a {
     width: 33%;
+    margin-top: 33px;
 }
 
 a.plus {
@@ -285,6 +286,9 @@ a.plus {
 
 .populaires-cards .card {
     display: flex;
+}
+
+.populaires-cards a {
     margin-top: 33px;
 }
 
@@ -353,6 +357,8 @@ footer {
 
 .footer-container {
     display: flex;
+    justify-content: space-between;
+    width: 85%;
 }
 
 .footer-container ul .titre {
@@ -360,7 +366,6 @@ footer {
 }
 
 .footer-container ul {
-    padding-right: 17em;
     padding-left: 1%;
     list-style-type: none;
 }
@@ -436,8 +441,13 @@ footer {
         height: 100%;
     }
 
-    .footer-container ul {
-        padding-right: 9em;
+    .activités-cards .card-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
 }
 
@@ -570,6 +580,7 @@ footer {
 
     .hebergements-cards a, .populaires-cards a, .activités-cards a {
         width: 100%;
+        margin-top: 20px;
     }
 
     .footer-container {
